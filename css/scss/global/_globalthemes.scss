@@ -1,4 +1,42 @@
 //Button theme
 .btn-theme {
-    
+    background-color: $color-theme-1;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        scale: 1.1;
+        background-color: black;
+    }
+}
+
+//Card theme
+.card {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    &:hover {
+        scale: 1.05;
+    }
+    .card-body {
+        span {
+            display: flex;
+            justify-content: space-between;                    
+            p {
+                margin: 0;
+                color: $color-gray-2;
+            }
+            button {
+                background-color: white;
+                border: none;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    scale: 1.2;
+                    color: $color-theme-1;
+                }
+            }
+        }
+    }
 }
