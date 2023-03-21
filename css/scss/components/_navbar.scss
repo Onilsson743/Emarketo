@@ -1,0 +1,39 @@
+.navbar {
+    position: relative;
+    padding: 40px 0 40px 0;
+    
+    .navbar-brand {
+        img {
+            height: 50px;
+        }   
+     }
+     .navbar-toggler {
+        font-size: 5rem;
+        border: none;
+        color: black;      
+     }
+    .navbar-collapse {
+        text-align: end;
+        font-size: 2rem;
+        padding-right: 20px;
+        padding-top: 20px;
+
+        @include lg {
+            position: absolute;
+            right: 0;
+            font-size: 1.5rem;
+
+            li {
+                display: flex;
+                align-items: center;
+            }
+        }
+       
+        .badge {
+            background-color: $color-theme-1;
+            font-size: 0.8rem;
+        }
+        
+    }
+
+}
