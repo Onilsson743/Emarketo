@@ -10,6 +10,19 @@
         background-color: black;
     }
 }
+//White button
+.btn-white {
+    background-color: white;
+    color: black;
+    border: 2px solid $color-gray-1;
+    padding: 10px 30px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        scale: 1.1;
+        background-color: black;
+        color: white;
+    }
+}
 
 //Card theme
 .card {
@@ -37,6 +50,63 @@
                     color: $color-theme-1;
                 }
             }
+        }
+    }
+}
+
+//Form theme
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    gap: 20px;
+
+    .split-input {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        span {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    label {
+        color: $color-gray-2;
+    }
+    input {
+        background-color: $color-gray-5;
+        padding: 10px;
+        border-radius: 2px;
+        margin-bottom: 25px;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 3px 10px rgb(126, 126, 126);
+        }
+    }
+    textarea {
+        background-color: $color-gray-5;
+        padding: 10px;
+        border-radius: 2px;
+        margin-bottom: 25px;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 3px 10px rgb(126, 126, 126);
+        }
+    }
+    button {
+        max-width: 250px;
+    }
+    .radio-input {
+        display: flex;
+        align-items: center;
+        input {
+            border-radius: 0px;
         }
     }
 }

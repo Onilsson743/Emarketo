@@ -20,9 +20,10 @@
         object-fit: cover;
         @include xl {
             max-width: 500px;
+            opacity: 1;
         }
         @include xxl {
-            max-width: 700px;
+            max-width: 700px;            
         }
     }
     .header-text {

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tutorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script  defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/Logo.svg"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav me-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">HOME
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PRODUCTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LOGIN</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-cart-shopping position-relative">
+                                        <span class="position-absolute translate-middle badge rounded-pill">
+                                            10
+                                            <span class="visually-hidden">Items in cart</span>
+                                        </span>
+                                    </i>
+                                </a>    
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+    </header>
+
+    <!-- Registration form -->
+    <div class="container">
+        <form action="" class="form">
+            <span class="split-input">
+                <span>
+                    <label for="firstName">First Name*</label>
+                    <input name="firstName" type="text">
+                </span>               
+                <span>
+                    <label for="lastName">Your Email*</label>
+                    <input name="email" type="email">
+                </span>                
+            </span>
+
+            <label for="streetName">Street Name*</label>
+            <input name="streetName" type="text">
+            
+            <span class="split-input">
+                <span>
+                    <label for="postalCode">Postal Code*</label>
+                    <input name="postalCode" type="text">
+                </span>
+                <span>
+                    <label for="city">City*</label>
+                    <input name="city" type="text">
+                </span>               
+            </span>
+
+            <span class="split-input">
+                <span>
+                    <label for="phoneNumber">Mobile (optional)</label>
+                    <input name="phoneNumber" type="text">
+                </span>
+                <span>
+                    <label for="company">Company (optional)</label>
+                    <input name="company" type="text">
+                </span>               
+            </span>
+
+            <label for="email">E-mail*</label>
+            <input name="email" type="email">
+
+            <label for="password">Password*</label>
+            <input name="password" type="text">
+
+            <label for="passwordconfirm">Confirm Password*</label>
+            <input name="passwordconfirm" type="text">
+
+            <label for="image">Upload Profile Image (Optional)</label>
+            <input name="image" type="text">
+
+            <span class="radio-input">
+                <input type="radio" name="agreements" id="">
+                <label for="agreements">I have read and accepts the terms and agreements</label>
+            </span>
+
+            
+            <button class="btn-theme">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2023 bmarketo.  All right reserved.</p>
+    </footer>
+    
+</body>
+</html>
